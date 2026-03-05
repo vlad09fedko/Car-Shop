@@ -64,3 +64,25 @@ main {
 .p-response {
   margin: 10px 5px;
 }
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  padding: 5px 300px;
+}
+
+.footer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px 0;

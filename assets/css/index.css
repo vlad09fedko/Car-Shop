@@ -39,3 +39,89 @@ nav {
   border: solid 1px black;
   border-radius: 50%;
 }
+
+/* main */
+
+main {
+  margin: 0 15%;
+}
+
+.div-heading1 {
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  padding-left: 3px;
+  gap: 15px;
+  align-items: center;
+}
+
+.heading3 {
+  margin: 10px 0;
+}
+
+.brand-story {
+  margin: 10px 0;
+}
+
+.description-models-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 200px;
+}
+
+.description-models-card {
+  border: 1px solid black;
+  border-radius: 25px;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.model-img {
+  width: 400px;
+}
+
+.heading3-about-car {
+  margin: 10px 10px;
+}
+
+.about-car {
+  margin: 0 10px 10px 10px;
+}
+
+.div-response {
+  width: fit-content;
+  min-width: 100px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.heading4,
+.p-response {
+  margin: 10px 5px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  padding: 5px 300px;
+}
+
+.footer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 5px 0;
+}

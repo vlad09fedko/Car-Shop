@@ -72,7 +72,7 @@ main {
 .description-models-div {
   display: flex;
   justify-content: space-between;
-  margin: 0 225px;
+  margin: 0 15%; /* 225px */
 }
 
 .description-models-card {
@@ -130,7 +130,7 @@ footer {
   padding: 5px 0;
 }
 
-/* To top btn*/
+/* to top btn*/
 
 .to-top-btn {
   position: fixed;
@@ -150,4 +150,20 @@ footer {
 
 .to-top-img {
   width: 50px;
+}
+
+/* adaptability */
+
+@media (max-width: 1550px) {
+  nav {
+    padding: 10px 250px;
+  }
+
+  .description-models-div {
+    margin: 0 8.5%;
+  }
+
+  footer {
+    padding: 5px 250px;
+  }
 }

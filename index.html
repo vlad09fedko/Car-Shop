@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Car Shop</title>
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
     <link
       rel="shortcut icon"
-      href="assets/icons/icons8-car-32.ico"
+      href="./assets/icons/icons8-car-32.ico"
       type="image/x-icon"
     />
   </head>
@@ -18,9 +18,10 @@
           <li><a href="#Ford" class="nav-link">Ford</a></li>
           <li><a href="#Toyota" class="nav-link">Toyota</a></li>
           <li><a href="#BMW" class="nav-link">BMW</a></li>
+          <li><a href="./assets/pages/form.html" class="nav-link">Order</a></li>
         </ul>
         <img
-          src="assets/icons/icons8-car-100.png"
+          src="./assets/icons/icons8-car-100.png"
           alt="Logo"
           class="logo-img"
         />
@@ -33,7 +34,7 @@
       <article id="Ford">
         <div class="logo-title">
           <img
-            src="assets/icons/ford-icon.png"
+            src="./assets/icons/ford-icon.png"
             alt="Ford-logo"
             class="car-logo"
           />
@@ -78,7 +79,7 @@
           <div class="description-models-div">
             <div class="description-models-card">
               <img
-                src="assets/images/Ford_Mustang_MachE–_GT_Rapid_Red.png"
+                src="./assets/images/Ford_Mustang_MachE–_GT_Rapid_Red.png"
                 alt="Ford_Mustang_MachE–GT_Rapid_Red_photo"
                 class="model-img"
               />
@@ -94,7 +95,7 @@
             </div>
             <div class="description-models-card">
               <img
-                src="assets/images/Ford_Raptor.png"
+                src="./assets/images/Ford_Raptor.png"
                 alt="Ford_Raptor_photo"
                 class="model-img"
               />
@@ -134,7 +135,7 @@
       <article id="Toyota">
         <div class="logo-title">
           <img
-            src="assets/icons/toyota-icon.png"
+            src="./assets/icons/toyota-icon.png"
             alt="toyota-logo"
             class="car-logo"
           />
@@ -177,11 +178,11 @@
           </p>
         </section>
         <section>
-          <h3 class="heading3"></h3>
+          <h3 class="heading3">Опис моделей</h3>
           <div class="description-models-div">
             <div class="description-models-card">
               <img
-                src="assets/images/Toyota_Corolla_Cross.png"
+                src="./assets/images/Toyota_Corolla_Cross.png"
                 alt="Toyota_Corolla_Cross_photo"
                 class="model-img"
               />
@@ -194,7 +195,7 @@
             </div>
             <div class="description-models-card">
               <img
-                src="assets/images/Toyota_Hilux.png"
+                src="./assets/images/Toyota_Hilux.png"
                 alt="Toyota_Hilux_photo"
                 class="model-img"
               />
@@ -236,7 +237,7 @@
       <article id="BMW">
         <div class="logo-title">
           <img
-            src="assets/icons/BMW-icon.png"
+            src="./assets/icons/BMW-icon.png"
             alt="BMW-logo"
             class="car-logo"
           />
@@ -277,11 +278,11 @@
           <div class="description-models-div">
             <div class="description-models-card">
               <img
-                src="assets/images/BMW_i5_xDrive40_Sedan.png"
+                src="./assets/images/BMW_i5_xDrive40_Sedan.png"
                 alt="BMW_i5_xDrive40_Sedan_photo"
                 class="model-img"
               />
-              <h3 class="heading3-about-car">BMW i5 xDrive40 Sedan</h3>
+              <h3 class="heading3-about-car">BMW i5 xDrive40</h3>
               <h3 class="heading3-about-car">4 100 000 ₴</h3>
               <p class="about-car">
                 Системи допомоги та зв'язку, функціональний і надзвичайно
@@ -290,13 +291,11 @@
             </div>
             <div class="description-models-card">
               <img
-                src="assets/images/BMW_M4_Competition_M_xDrive_Coupe.png"
+                src="./assets/images/BMW_M4_Competition_M_xDrive_Coupe.png"
                 alt="BMW_M4_Competition_M_xDrive_Coupe_photo"
                 class="model-img"
               />
-              <h3 class="heading3-about-car">
-                BMW M4 Competition M xDrive Coupe
-              </h3>
+              <h3 class="heading3-about-car">BMW M4 Competition M xDrive</h3>
               <h3 class="heading3-about-car">5 550 000 ₴</h3>
               <p class="about-car">
                 Системи допомоги та зв'язку, функціональний і надзвичайно
@@ -333,6 +332,78 @@
           </div>
         </section>
       </article>
+      <table>
+        <caption>
+          Таблиця#2 Інформація про машини
+        </caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Бренд</th>
+            <th rowspan="2">Модель</th>
+            <th rowspan="2">Країна</th>
+            <th colspan="2">Вага кг</th>
+            <th rowspan="2">Макс. швидкість</th>
+            <th rowspan="2">Рік релізу</th>
+          </tr>
+          <tr>
+            <th>пуста</th>
+            <th>повна</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Ford</td>
+            <td>Mustang Mach-E</td>
+            <td>США</td>
+            <td>2200</td>
+            <td>2700</td>
+            <td>180</td>
+            <td>2022</td>
+          </tr>
+          <tr>
+            <td>Ranger Raptor</td>
+            <td>США</td>
+            <td>2475</td>
+            <td>3130</td>
+            <td>180</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Toyota</td>
+            <td>Corolla Cross</td>
+            <td>Японія</td>
+            <td>1460</td>
+            <td>2000</td>
+            <td>180</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>Hilux</td>
+            <td>Японія</td>
+            <td>2100</td>
+            <td>3050</td>
+            <td>175</td>
+            <td>2020</td>
+          </tr>
+          <tr>
+            <td rowspan="2">BMW</td>
+            <td>i5 xDrive40</td>
+            <td>Німеччина</td>
+            <td>2280</td>
+            <td>2890</td>
+            <td>215</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>M4 Competition M xDrive</td>
+            <td>Німеччина</td>
+            <td>1850</td>
+            <td>2275</td>
+            <td>250</td>
+            <td>2021</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <footer>
       <address class="footer-address">
@@ -364,9 +435,9 @@
       </address>
     </footer>
     <div class="to-top-btn">
-      <a href="#top">
+      <a href="#">
         <img
-          src="assets/icons/icons8-arrow_up-100.png"
+          src="./assets/icons/icons8-arrow_up-100.png"
           alt="arrow_up"
           class="to-top-img"
         />

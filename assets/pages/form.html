@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Shop - Form</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/form.css" />
+    <link
+      rel="shortcut icon"
+      href="../icons/icons8-car-32.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../../index.html" class="nav-link">Home</a></li>
+          <li><a href="./form.html" class="nav-link">Order</a></li>
+        </ul>
+        <img src="../icons/icons8-car-100.png" alt="Logo" class="logo-img" />
+      </nav>
+    </header>
+    <main>
+      <form>
+        <!-- personal info -->
+        <fieldset>
+          <legend>Персональна інформація</legend>
+          <div>
+            <label for="last-name">Прізвище </label
+            ><input type="text" id="last-name" required />
+          </div>
+          <div>
+            <label for="first-name">Ім'я </label
+            ><input type="text" id="first-name" required />
+          </div>
+          <div>
+            <label for="patronymic">По-батькові </label
+            ><input type="text" id="patronymic" required />
+          </div>
+          <div>
+            <label for="birthday">Дата народження </label
+            ><input type="date" id="birthday" required />
+          </div>
+          <div>
+            <p>Стать</p>
+            <label for="male">Чоловік</label
+            ><input type="radio" name="radio" id="male" checked />
+            <label for="female">Жінка</label
+            ><input type="radio" name="radio" id="female" />
+          </div>
+          <div>
+            <label for="drive-experience">Досвід водіння </label>
+            <select id="drive-experience" required>
+              <option value="">---</option>
+              <option value="менше 1 року">менше 1 року</option>
+              <option value="1 рік">1 рік</option>
+              <option value="2 роки">2 роки</option>
+              <option value="3 роки">3 роки</option>
+              <option value="4 роки">4 роки</option>
+              <option value="5 років">5 років</option>
+              <option value="6 років">6 років</option>
+              <option value="7 років">7 років</option>
+              <option value="8 років">8 років</option>
+              <option value="9 років">9 років</option>
+              <option value="10 років">10 років</option>
+              <option value="більше 10 років">більше 10 років</option>
+            </select>
+          </div>
+        </fieldset>
+        <!-- contacts -->
+        <fieldset>
+          <legend>Контактні дані</legend>
+          <div>
+            <label for="email">Email </label
+            ><input type="email" id="email" required />
+          </div>
+          <div>
+            <label for="phone">Phone </label
+            ><input type="tel" id="phone" required />
+          </div>
+          <div>
+            <label for="adress">Adress </label
+            ><textarea id="adress" required></textarea>
+          </div>
+        </fieldset>
+        <!-- car info  -->
+        <fieldset>
+          <legend>Інформація про машину</legend>
+          <div>
+            <label for="brand">Бренд</label>
+            <select id="brand" required>
+              <option value="">---</option>
+              <option value="Ford">Ford</option>
+              <option value="Toyota">Toyota</option>
+              <option value="BMW">BMW</option>
+            </select>
+          </div>
+          <div>
+            <label for="model">Модель</label>
+            <select id="model" required>
+              <option value="">---</option>
+              <option value="Mustang Mach-E">Mustang Mach-E</option>
+              <option value="Ranger Raptor">Ranger Raptor</option>
+              <option value="Corolla Cross">Corolla Cross</option>
+              <option value="Hilux">Hilux</option>
+              <option value="i5 xDrive40">i5 xDrive40</option>
+              <option value="M4 Competetion M xDrive">
+                M4 Competetion M xDrive
+              </option>
+            </select>
+          </div>
+          <div>
+            <label for="checkbox">Вживана</label
+            ><input type="checkbox" id="checkbox" />
+          </div>
+          <div>
+            <p>Колір</p>
+            <label for="red">Червоний</label
+            ><input type="radio" name="color" id="red" /><label for="black"
+              >Чорний</label
+            ><input type="radio" name="color" id="black" /><label for="blue"
+              >Синій</label
+            ><input type="radio" name="color" id="blue" /><label for="white"
+              >Білий</label
+            ><input type="radio" name="color" id="white" /><label for="grey"
+              >Сірий</label
+            ><input type="radio" name="color" id="grey" checked />
+          </div>
+          <div>
+            <label for="price">Ціна</label
+            ><input
+              type="range"
+              id="price"
+              min="15000"
+              max="65000"
+              step="5000"
+              list="money"
+            />
+            <datalist id="money">
+              <option value="15000"></option>
+              <option value="20000"></option>
+              <option value="25000"></option>
+              <option value="30000"></option>
+              <option value="35000"></option>
+              <option value="40000"></option>
+              <option value="45000"></option>
+              <option value="50000"></option>
+              <option value="55000"></option>
+              <option value="60000"></option>
+              <option value="65000"></option>
+            </datalist>
+          </div>
+        </fieldset>
+        <!-- buttons -->
+        <div class="buttons">
+          <input type="reset" value="Скинути" />
+          <input type="submit" value="Відправити" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

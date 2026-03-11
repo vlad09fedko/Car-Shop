@@ -154,7 +154,17 @@ footer {
 
 /* adaptability */
 
-@media (max-width: 1550px) {
+@media (max-width: 1700px) {
+  .description-models-div {
+    margin: 0 10%;
+  }
+
+  footer {
+    padding: 5px 250px;
+  }
+}
+
+@media (max-width: 1600px) {
   nav {
     padding: 10px 250px;
   }
@@ -165,5 +175,82 @@ footer {
 
   footer {
     padding: 5px 250px;
+  }
+}
+
+@media (max-width: 1450px) {
+  nav {
+    padding: 10px 200px;
+  }
+
+  .description-models-div {
+    margin: 0 5%;
+  }
+
+  footer {
+    padding: 5px 250px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .description-models-div {
+    margin: 0 3%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .footer-address {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  nav {
+    padding: 10px 150px;
+  }
+
+  .description-models-div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .description-models-div {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .description-models-card {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  nav {
+    padding: 10px 100px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav {
+    padding: 10px 50px;
+  }
+
+  main {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 10px 25px;
+  }
+
+  main {
+    margin: 0 25px;
   }
 }

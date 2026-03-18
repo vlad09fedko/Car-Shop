@@ -107,6 +107,30 @@ main {
   margin: 10px 5px;
 }
 
+table,
+thead,
+tbody,
+th,
+td {
+  border: 2px solid teal;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+caption {
+  font-size: 20px;
+}
+
+th,
+td {
+  font-size: 18px;
+}
+
 /* footer */
 
 footer {
@@ -134,8 +158,8 @@ footer {
 
 .to-top-btn {
   position: fixed;
-  right: 2%;
-  bottom: 2%;
+  right: 20px;
+  bottom: 10px;
   max-width: 50px;
   max-height: 50px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);

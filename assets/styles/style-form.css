@@ -13,20 +13,124 @@ main {
   height: 92vh;
 }
 
-form {
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 10px;
-  align-items: center;
+/* personal info */
+
+.content,
+fieldset,
+label,
+input,
+.sex-radiobtn,
+.drive-experience,
+article {
+  display: flex;
 }
 
-p {
-  margin: 0 0;
+fieldset {
+  width: 350px;
 }
+
+.personal-info,
+.contact-data {
+  justify-content: space-between;
+}
+
+input,
+select,
+textarea {
+  width: 170px;
+}
+
+.sex-radiobtn {
+  justify-content: space-around;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="range"] {
+  width: initial;
+  margin: 0;
+}
+
+label,
+input,
+select {
+  margin: 5px 0;
+}
+
+input[type="date"] {
+  margin: 0;
+}
+
+.personal-info select {
+  margin: 0;
+}
+
+/* contacts */
 
 textarea {
-  resize: none;
+  padding: 1px 2px;
+  height: 19px;
+  min-height: 19px;
+  max-height: 94px;
+  resize: vertical;
 }
+
+/* car info */
+
+fieldset:last-child {
+  flex-direction: column;
+}
+
+.brand-model {
+  justify-content: space-between;
+}
+
+.brand-model > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-details > div:first-child {
+  display: flex;
+  flex-direction: row;
+}
+
+.used {
+  gap: 25px;
+}
+
+.used * {
+  margin: 0;
+}
+
+.color {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.price > * {
+  margin: 0;
+}
+
+.price > input {
+  width: 180px;
+}
+
+datalist {
+  display: flex;
+  width: fit-content;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+/* buttons */
 
 .buttons {
   display: flex;

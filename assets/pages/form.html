@@ -25,27 +25,39 @@
       <form>
         <section class="content">
           <!-- personal info -->
-          <fieldset class="personal-info">
+          <fieldset>
             <legend>Персональна інформація</legend>
             <div>
               <label for="last-name">Прізвище</label>
-              <label for="first-name">Ім'я</label>
-              <label for="patronymic">По-батькові</label>
-              <label for="birthday">Дата народження</label>
-              <label>Стать</label>
-              <label for="drive-experience">Досвід водіння </label>
+              <input type="text" id="last-name" required />
             </div>
             <div>
-              <input type="text" id="last-name" required />
+              <label for="first-name">Ім'я</label>
               <input type="text" id="first-name" required />
+            </div>
+            <div>
+              <label for="patronymic">По-батькові</label>
               <input type="text" id="patronymic" required />
+            </div>
+            <div>
+              <label for="birthday">Дата народження</label>
               <input type="date" id="birthday" required />
+            </div>
+            <div>
+              <p>Стать</p>
               <div class="sex-radiobtn">
-                <label for="male">Чоловік</label
-                ><input type="radio" name="radio" id="male" checked />
-                <label for="female">Жінка</label
-                ><input type="radio" name="radio" id="female" />
+                <div>
+                  <label for="male">Чоловік</label
+                  ><input type="radio" name="radio" id="male" checked />
+                </div>
+                <div>
+                  <label for="female">Жінка</label
+                  ><input type="radio" name="radio" id="female" />
+                </div>
               </div>
+            </div>
+            <div>
+              <label for="drive-experience">Досвід водіння </label>
               <select id="drive-experience" required>
                 <option value="">---</option>
                 <option value="менше 1 року">менше 1 року</option>
@@ -68,85 +80,92 @@
             <legend>Контактні дані</legend>
             <div>
               <label for="email">Email </label>
-              <label for="phone">Phone </label>
-              <label for="adress">Adress </label>
+              <input type="email" id="email" required />
             </div>
             <div>
-              <input type="email" id="email" required />
+              <label for="phone">Phone </label>
               <input type="tel" id="phone" required />
+            </div>
+            <div>
+              <label for="adress">Adress </label>
               <textarea id="adress" required></textarea>
             </div>
           </fieldset>
           <!-- car info  -->
           <fieldset>
             <legend>Інформація про машину</legend>
-            <article class="brand-model">
+            <div>
+              <label for="brand">Бренд</label>
+              <select id="brand" required>
+                <option value="">---</option>
+                <option value="Ford">Ford</option>
+                <option value="Toyota">Toyota</option>
+                <option value="BMW">BMW</option>
+              </select>
+            </div>
+            <div>
+              <label for="model">Модель</label>
+              <select id="model" required>
+                <option value="">---</option>
+                <option value="Mustang Mach-E">Mustang Mach-E</option>
+                <option value="Ranger Raptor">Ranger Raptor</option>
+                <option value="Corolla Cross">Corolla Cross</option>
+                <option value="Hilux">Hilux</option>
+                <option value="i5 xDrive40">i5 xDrive40</option>
+                <option value="M4 Competetion M xDrive">
+                  M4 Competetion M xDrive
+                </option>
+              </select>
+            </div>
+            <div class="used">
+              <label for="checkbox">Вживана</label>
+              <input type="checkbox" id="checkbox" />
+            </div>
+            <div class="color">
               <div>
-                <label for="brand">Бренд</label>
-                <label for="model">Модель</label>
+                <label for="red">Червоний</label>
+                <input type="radio" name="color" id="red" />
               </div>
               <div>
-                <select id="brand" required>
-                  <option value="">---</option>
-                  <option value="Ford">Ford</option>
-                  <option value="Toyota">Toyota</option>
-                  <option value="BMW">BMW</option>
-                </select>
-                <select id="model" required>
-                  <option value="">---</option>
-                  <option value="Mustang Mach-E">Mustang Mach-E</option>
-                  <option value="Ranger Raptor">Ranger Raptor</option>
-                  <option value="Corolla Cross">Corolla Cross</option>
-                  <option value="Hilux">Hilux</option>
-                  <option value="i5 xDrive40">i5 xDrive40</option>
-                  <option value="M4 Competetion M xDrive">
-                    M4 Competetion M xDrive
-                  </option>
-                </select>
+                <label for="black">Чорний</label>
+                <input type="radio" name="color" id="black" />
               </div>
-            </article>
-            <article class="car-details">
-              <div class="used">
-                <label for="checkbox">Вживана</label>
-                <input type="checkbox" id="checkbox" />
+              <div>
+                <label for="blue">Синій</label>
+                <input type="radio" name="color" id="blue" />
               </div>
-              <div class="color">
-                <label for="red">Червоний</label
-                ><input type="radio" name="color" id="red" /><label for="black"
-                  >Чорний</label
-                ><input type="radio" name="color" id="black" /><label for="blue"
-                  >Синій</label
-                ><input type="radio" name="color" id="blue" /><label for="white"
-                  >Білий</label
-                ><input type="radio" name="color" id="white" /><label for="grey"
-                  >Сірий</label
-                ><input type="radio" name="color" id="grey" checked />
+              <div>
+                <label for="white">Білий</label>
+                <input type="radio" name="color" id="white" />
               </div>
-              <div class="price">
-                <label for="price">Ціна</label
-                ><input
-                  type="range"
-                  id="price"
-                  min="15000"
-                  max="65000"
-                  step="5000"
-                  list="money"
-                />
-                <datalist id="money">
-                  <option value="15000" label="1,5"></option>
-                  <option value="20000" label="2"></option>
-                  <option value="25000" label="2,5"></option>
-                  <option value="30000" label="3"></option>
-                  <option value="35000" label="3,5"></option>
-                  <option value="40000" label="4"></option>
-                  <option value="45000" label="4,5"></option>
-                  <option value="50000" label="5"></option>
-                  <option value="55000" label="5,5"></option>
-                  <option value="60000" label="6"></option>
-                  <option value="65000" label="6,5"></option>
-                </datalist>
+              <div>
+                <label for="grey">Сірий</label>
+                <input type="radio" name="color" id="grey" checked />
               </div>
-            </article>
+            </div>
+            <div class="price">
+              <p>Ціна</p>
+              <input
+                type="range"
+                min="15000"
+                max="65000"
+                step="5000"
+                list="money"
+              />
+              <datalist id="money">
+                <option value="15000" label="1,5"></option>
+                <option value="20000" label="2"></option>
+                <option value="25000" label="2,5"></option>
+                <option value="30000" label="3"></option>
+                <option value="35000" label="3,5"></option>
+                <option value="40000" label="4"></option>
+                <option value="45000" label="4,5"></option>
+                <option value="50000" label="5"></option>
+                <option value="55000" label="5,5"></option>
+                <option value="60000" label="6"></option>
+                <option value="65000" label="6,5"></option>
+              </datalist>
+            </div>
           </fieldset>
         </section>
         <!-- buttons -->
